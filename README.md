@@ -13,8 +13,6 @@
 
 ## 시스템 아키텍처 (System Architecture)
 
-본 시스템은 응답 지연을 없애고 안정성을 확보하기 위해, 컴퓨팅 자원을 **메인 추론 엔진(Desktop)**과 **평가/요약 엔진(Laptop)**으로 물리적으로 분리한 분산 아키텍처를 채택했습니다.
-
 ```mermaid
 flowchart TD
     %% 사용자 영역
@@ -56,9 +54,7 @@ flowchart TD
     Gemma -- "태그 및 요약 추가" --> WikiAuto
     Watcher -. "처리 완료 후 이동" .-> RawArchive
 
-
-
----
+```
 
 ## 핵심 기능 (Main Features)
 
